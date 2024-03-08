@@ -1,0 +1,90 @@
+/*Romero - Menu
+3/7/2024
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+   background-color: darkblue;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   font-size: 20px;
+}
+
+.primary-icon {
+    height: 40px; 
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.nav-list .list-item {
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+/* mobile view*/
+@media all and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar .container-icon {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        border-top: 1px solid white;
+    }
+
+    .active {
+        display: block;
+    }
+}

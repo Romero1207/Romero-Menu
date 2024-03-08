@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!--
+    Antoinette Romero
+    Menu
+    3/7/2024
+-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar Tutorial</title>
+    
+ <!--linking to main stylesheet-->   
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="#">
+            <img class="primary-icon" alt src="healthy-food-logo.png">
+            </a>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="#">Our Service</a>
+            </li>
+            <li class="list-item">
+                <a href="#">About Us</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Contact</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Support</a>
+            </li>
+        </ul>
+        <div class="menu" id="toggleButton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+</body>
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click',() => {
+        naviList.classList.toggle('active')
+    })
+</script>
+
+
+</html>
